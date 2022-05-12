@@ -1,0 +1,73 @@
+/*login*/
+.loginwallp {
+    background-image: url('../img/loginwallpbwtr.png');
+    background-size: cover;
+    height: 777px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-user-login {
+    background-image: url('../img/vintage2.png');
+    background-size: cover;
+    max-width: 666px;
+    padding: 33px;
+    border-radius: 22px;
+    padding-top: 0;
+}
+
+.form-content {
+    margin-top: 44px;
+}
+
+.loginregisterswitch {
+    background-color: black;
+    opacity: 69%;
+    max-width: 222px;
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 55px;
+    border-radius: 22px;
+}
+
+.loginregisterswitch:hover {
+    opacity: 100%;
+    transform: scale(125%);
+    transition: 1000ms;
+    cursor: pointer;
+
+}
+
+.loginregisterswitch a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.loginregisterswitch a:hover {
+    color: goldenrod;
+}
+
+.align {
+    text-align: center;
+    margin-left: 33px;
+}
+
+.banner-user-image-profile {
+    background-image: url('../img/vintage2.png');
+    width: 888px;
+    height: 444px;
+    border-radius: 22px;
+    padding: 33px;
+    color: black;
+}
+
+.profilemenu {
+    max-width: 199px;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}

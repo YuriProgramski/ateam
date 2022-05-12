@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Cookie&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 19px;
+    font-family: Public sans;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header .header,
+footer {
+    padding: 20px 0;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+/*-----------logo------------*/
+
+.logo {
+    margin: 0;
+    margin-top: 13px;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-width: 122px;
+    max-height: 55px;
+    border-radius: 22px;
+    opacity: 69%;
+}
+
+.logo img:hover {
+    opacity: 100%;
+    transform: scale(125%);
+    transition: 1000ms;
+    cursor: pointer;
+}
+
+/*-------------//------------------*/
+
+.main-header {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+
+}
+
+.main-header .container {
+    vertical-align: middle;
+    background-color: white;
+    padding: 0;
+    opacity: 77%;
+    background-image: url('../img/navbg.png');
+    background-size: cover;
+    border-radius: 7%;
+    border: 1px solid goldenrod;
+    padding-left: 23px;
+    padding-right: 23px;
+
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid rgba(104, 8, 8, 0.888);
+    border-radius: 22px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: rgba(170, 15, 15, 0.897);
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav>*:hover {
+    z-index: 2;
+    transform: rotate(7deg);
+    transition: 500ms;
+}
+
+/*----------------------------------------------//header*/
+
+/*-----------banner---------------*/
+
+.banner {
+    min-height: 777px;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.200);
+    color: white;
+    background-blend-mode: multiply;
+    padding-bottom: 69px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-slogan {
+
+    font-size: 55px;
+    font-weight: normal;
+    font-family: Cookie, serif;
+    color: beige;
+    margin-top: 13rem;
+    padding: 0.5rem 5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    z-index: 2;
+    background-color: rgb(53, 39, 4, 55%);
+    border-radius: 33px;
+    padding: 22px;
+}
+
+.banner-user {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.banner-user-image a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner-user-image-teaser {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 11px;
+    background-color: black;
+    opacity: 60%;
+    border-radius: 11px;
+    letter-spacing: 1.25px;
+    padding-left: 13px;
+    padding-right: 13px;
+    cursor: pointer;
+}
+
+.banner-user-image-teaser:hover {
+    transform: scale(133%);
+    transform: rotate(4deg);
+    transition: 500ms;
+}
+
+.banner-user-image {
+    min-width: 333px;
+    min-height: 222px;
+    background-color: black;
+    opacity: 69%;
+    /* margin-right: 44px; */
+    background-image: url('../img/crew.png');
+    opacity: 69%;
+    background-size: cover;
+    border-radius: 22px;
+    position: relative;
+    margin: 33px;
+
+}
+
+.banner-user-image:hover {
+    opacity: 100%;
+    transition: 1111ms;
+    transform: scale(133%);
+}
+
+.banner-user-image:first-of-type {
+
+    background-image: url('../img/fleet.png');
+    background-size: cover;
+
+}
+
+.banner-user-counter {
+    position: absolute;
+    bottom: 38px;
+    right: 8px;
+    background-color: darkred;
+    color: gold;
+    border-radius: 55px;
+    padding: 5px;
+}
+
+.banner-user-image:last-of-type .banner-user-counter {
+    left: 90px;
+    max-width: 18px;
+}
+
+.banner-user-image:last-of-type .banner-user-image-teaser {
+
+    position: absolute;
+    left: 15px;
+    max-width: 88px;
+}
+
+.banner-user-image:last-of-type {
+
+    background-image: url('../img/crew.png');
+    background-size: cover;
+}
+
+/*--------*/
+@keyframes zoomIn {
+    0% {
+        transform: scale(133%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.banner-user-image-fleet,
+.banner-user-image-crew {
+    animation: 2s ease-out 0s 1 zoomIn;
+    width: 477px;
+    height: 333px;
+    background-image: url('../img/fleet.png');
+    background-size: cover;
+    border-radius: 22px;
+    position: relative;
+}
+
+
+.banner-user-image-fleet-teaser p,
+.banner-user-image-crew-teaser p {
+    background-color: black;
+    color: white;
+    width: 69px;
+    opacity: 55%;
+    margin-top: 66px;
+    margin-left: 11px;
+    border-radius: 33px;
+    padding: 3px;
+    font-size: 17px;
+}
+
+.banner-user-image-fleet-teaser,
+.banner-user-image-crew-teaser {
+    top: -13px;
+    right: -55px;
+    position: absolute;
+    width: 177px;
+    height: 100px;
+    background-image: url('../img/crew.png');
+    background-size: cover;
+    border-radius: 22px;
+    opacity: 44%;
+
+}
+
+.banner-user-image-crew {
+    background-image: url('../img/crew.png');
+}
+
+.banner-user-image-crew-teaser {
+    background-image: url('../img/fleet.png');
+}
+
+.banner-user-image-fleet-teaser:hover,
+.banner-user-image-crew-teaser:hover {
+    opacity: 100%;
+    transform: rotate(7deg);
+    transition: 3333ms;
+}
+
+/*-----------footer-----------*/
+
+.main-footer .container .logo {
+    margin-top: 55px;
+}
+
+.main-footer {
+    background-image: url('../img/footbg.png');
+    background-size: cover;
+
+    padding: 3rem 0;
+    background-color: rgba(104, 8, 8, 0.888);
+    /* opacity: 69%; */
+    color: black;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.main-footer .container:hover {
+
+    opacity: 99%;
+}
+
+.main-footer .container>* {
+    flex: 1;
+}
+
+.main-footer h1 {
+    font-family: sans-serif;
+}
+
+.main-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-footer h1:hover {
+    cursor: pointer;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+.footersection {
+    background-image: url('../img/vintage2.png');
+    background-color: black;
+    opacity: 44%;
+    padding: 11px;
+    margin: 11px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.footersection:hover {
+    opacity: 88%;
+    transition: 1111ms;
+    transform: scale(117%);
+}
+
+.footersection a:hover {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.footersection h1:hover {
+    transform: scale(133%);
+    transition: 500ms;
+    transform: scale(122%);
+}
+
+.footersection ul li:hover {
+    transform: scale(144%);
+    transform: rotate(11deg);
+    transition: 500ms;
+}
+
+
+.top:hover {
+    opacity: 100%;
+    transform: scale(125%);
+    transition: 1000ms;
+}
+
+/*----------------------------------------------//footer*/
+
+.firstsect {
+    padding: 4rem 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+    background-image: url('../img/vintage2.png');
+    background-size: cover;
+    text-align: center;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: scale(144%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.section-title {
+    animation: 4s ease-out 0s 1 slideInFromLeft;
+    transition: 2000ms;
+    font-size: 5rem;
+    font-family: Cookie;
+    font-weight: normal;
+}
+
+/*--------------------------------*/
+
+.button:hover {
+    opacity: 100%;
+    transform: scale(125%);
+    transition: 1000ms;
+    border: 1px solid rgb(246, 191, 53);
+    border-radius: 22px;
+    color: rgb(246, 191, 53);
+    z-index: 2;
+}
+
+.button {
+
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-image: url(../img/buttonbg.png);
+    opacity: 69%;
+    background-color: rgba(170, 15, 15, 0.897);
+    border: 1px solid beige;
+    border-radius: 11px;
+    color: beige;
+    cursor: pointer;
+}
+
+/*--------------contact-------------*/
+
+.banner-user-image-contact:last-of-type {
+
+    background-image: url('../img/vintage2.png');
+    background-size: cover;
+    max-width: 122px;
+    max-height: 69px;
+    font-size: 13px;
+    color: black;
+}
+
+.topmarge {
+    margin-top: 44px;
+}
+
+.banner-user-image-contact:first-of-type {
+
+    background-image: url('../img/contact.png');
+    background-size: cover;
+
+}
+
+.banner-user-image-contact {
+    min-width: 333px;
+    min-height: 222px;
+    background-color: black;
+    opacity: 69%;
+    /* margin-right: 44px; */
+    background-image: url('../img/crew.png');
+    opacity: 69%;
+    background-size: cover;
+    border-radius: 22px;
+    position: relative;
+    margin: 33px;
+    text-align: center;
+
+}
+
+.banner-user-image-contact:hover {
+    opacity: 100%;
+    transition: 1111ms;
+    transform: scale(133%);
+}

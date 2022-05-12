@@ -1,0 +1,142 @@
+.mainsection {
+    padding: 66px 77px;
+}
+
+/*-----*/
+.pin {
+    background-image: url('../img/vintage2.png');
+    opacity: 77%;
+    padding: 13px;
+    border-radius: 13px;
+
+}
+
+.pin p {
+    font-size: 13px;
+}
+
+.pin:hover {
+    opacity: 100%;
+    transition: 1111ms;
+    transform: scale(144%);
+    z-index: 2;
+    border: 1px solid darkred;
+}
+
+
+/*------*/
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blinker 1s step-start infinite;
+}
+
+/*----*/
+
+.mainsection img {
+    margin-left: 0;
+    max-width: 777px;
+    max-height: 555px;
+    border-radius: 22px;
+}
+
+@media (max-width: 800px) {
+    .mainsection img {
+        max-width: 577px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainsection img {
+        max-width: 377px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .mainsection img {
+        max-width: 222px;
+        max-height: 170px;
+    }
+}
+
+/*----*/
+
+.row {
+    margin-bottom: 55px;
+    margin-top: 44px;
+    ;
+}
+
+.row>* {
+    max-width: 777px;
+}
+
+/*-----*/
+.card {
+    background-image: url('../img/vintage2.png');
+    opacity: 77%;
+    padding: 13px;
+    border-radius: 13px;
+}
+
+.card:hover {
+    opacity: 100%;
+    transition: 1111ms;
+    transform: scale(144%);
+    z-index: 2;
+    border: 1px solid darkred;
+}
+
+.card .cardimage {
+    opacity: 77%;
+}
+
+.cardflex {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+}
+
+@media (min-width: 500px) {
+    .cardflex {
+        font-size: 18px;
+    }
+}
+
+.cardflex>* {
+    margin: 33px;
+}
+
+.cardflex img {
+    size: 100%;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+.card .cardimage:hover {
+    opacity: 100%;
+    transition: 1111ms;
+    transform: scale(144%);
+    z-index: 2;
+}
+
+
+/*------*/
+
+#fleetboard {
+    background-color: black;
+    background-image: url('../img/fleetwallp.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 88%;
+    height: 999px;
+}
